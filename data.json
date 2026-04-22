@@ -1,0 +1,101 @@
+{
+    "categories": [
+        {
+            "id": "0",
+            "label": "All Coffee"
+        },
+        {
+            "id": "1",
+            "label": "Machiato"
+        },
+        {
+            "id": "2",
+            "label": "Latte"
+        },
+        {
+            "id": "3",
+            "label": "Americano"
+        },
+        {
+            "id": "4",
+            "label": "Espresso"
+        }
+    ],
+    "coffeeList": [
+        {
+            "id": "1",
+            "name": "Caffe Mocha",
+            "sub": "Deep Foam",
+            "price": "$4.53",
+            "rating": "4.8",
+            "reviews": 230,
+            "category": "1",
+            "description": "A cappuccino is an approximately 150 ml (5 oz) beverage, with 25 ml of espresso coffee and 85ml of fresh milk the fo...",
+            "image": "caffe_mocha"
+        },
+        {
+            "id": "2",
+            "name": "Flat White",
+            "sub": "Espresso",
+            "price": "$3.53",
+            "rating": "4.8",
+            "reviews": 185,
+            "category": "4",
+            "description": "Flat white is a coffee drink consisting of espresso with microfoam, a velvety steamed milk. It is generally smaller than a latte.",
+            "image": "flat_white"
+        },
+        {
+            "id": "3",
+            "name": "Cappuccino",
+            "sub": "Ice/Hot",
+            "price": "$4.20",
+            "rating": "4.5",
+            "reviews": 312,
+            "category": "2",
+            "description": "Cappuccino is an espresso-based coffee drink that originated in Italy, prepared with steamed milk foam. It is traditionally small.",
+            "image": "cappuccino"
+        },
+        {
+            "id": "4",
+            "name": "Americano",
+            "sub": "Black",
+            "price": "$3.20",
+            "rating": "4.5",
+            "reviews": 140,
+            "category": "3",
+            "description": "Caffè Americano is a style of espresso prepared by diluting an espresso shot with hot water, giving it a similar strength but different flavor.",
+            "image": "americano"
+        },
+        {
+            "id": "5",
+            "name": "Latte",
+            "sub": "Milk Foam",
+            "price": "$3.80",
+            "rating": "4.6",
+            "reviews": 198,
+            "category": "2",
+            "description": "A latte is a coffee drink made with espresso and steamed milk. It is a popular choice for those who enjoy a creamy and mild coffee flavor.",
+            "image": "latte"
+        },
+        {
+            "id": "6",
+            "name": "Machiato",
+            "sub": "Caramel",
+            "price": "$4.10",
+            "rating": "4.7",
+            "reviews": 267,
+            "category": "1",
+            "description": "A macchiato is an espresso coffee drink with a small amount of milk, usually foamed. It is stronger than a cappuccino but lighter than a plain espresso.",
+            "image": "machiato"
+        }
+    ],
+    "promo": {
+        "badge": "Promo",
+        "title": "Buy one get\none FREE",
+        "image": "promo_cup"
+    },
+    "user": {
+        "name": "Bilzen, Tanjungbalai",
+        "avatar": "avatar"
+    }
+}

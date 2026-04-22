@@ -1,20 +1,47 @@
+import { useState } from 'react';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import OnboardingScreen from './screens/OnboardingScreen';
+import CoffeeHomeScreen from './screens/CoffeeHomeScreen';
+import DetailItemScreen from './screens/DetailItemScreen';
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
-}
+  const [screen, setScreen] = useState('onboarding');
+  const [selectedItem, setSelectedItem] = useState(null);
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+  const handleSelectItem = (item) => {
+    setSelectedItem(item);
+    setScreen('detail');
+  };
+
+  if (screen === 'onboarding') {
+    return (
+      <>
+        <StatusBar style="light" />
+        <OnboardingScreen onGetStarted={() => setScreen('home')} />
+      </>
+    );
+  }
+
+  if (screen === 'home') {
+    return (
+      <>
+        <StatusBar style="light" />
+        <CoffeeHomeScreen onSelectItem={handleSelectItem} />
+      </>
+    );
+  }
+
+  if (screen === 'detail') {
+    return (
+      <>
+        <StatusBar style="dark" />
+        <DetailItemScreen
+          item={selectedItem}
+          onBack={() => setScreen('home')}
+        />
+      </>
+    );
+  }
+
+  return null;
+}
